@@ -31,8 +31,8 @@ function update() {
   const rang = computeRang(avg);
   const rounded = avg.toFixed(2);
   
-  resultDiv.textContent = "Rang: " + rang;
-  resultDiv2.textContent = "Moyenne: " + rounded;
+  resultDiv.textContent = "Rang ≈ " + rang;
+  resultDiv2.textContent = "Moyenne = " + rounded;
 }
 
 inputs.forEach(input => input.addEventListener("input", update));
