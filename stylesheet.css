@@ -57,3 +57,22 @@ select {
     color: #FFFFFF;
     text-align: left;
 }
+.tab-container {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.box-tab {
+    padding: 10px 20px;
+    background-color: #131314;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px transparent;
+}
+
+.box-tab.active {
+    border: 2px transparent;
+    border-bottom: none; 
+    background-color: #1E1F20;
+}
