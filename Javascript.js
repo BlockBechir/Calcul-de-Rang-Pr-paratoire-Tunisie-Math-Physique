@@ -3,12 +3,16 @@ const yearSelect = document.getElementById("year");
 const resultDiv = document.getElementById("result");
 const resultDiv2 = document.getElementById("result2");
 const tabs = document.querySelectorAll(".box-tab");
+const epreuve1 = { "MP": "Math II:", "PC": "Chimie Organique:"};
+const epreuve2 = { "MP": "Math I:", "PC": "Mathematiques:"};
 
 tabs.forEach(tab => {
   tab.addEventListener("click", (event) => {
     tabs.forEach(t => t.style.backgroundColor = "#131314");
     event.target.style.backgroundColor = "#1E1F20";
     activeTab = event.target.dataset.value;
+    document.querySelector('label[for="analyse"]').textContent = epreuve2[activeTab];
+    document.querySelector('label[for="algebre"]').textContent = epreuve1[activeTab];
     tabs.forEach(t => t.classList.remove("active"));
     event.target.classList.add("active");
     update();
