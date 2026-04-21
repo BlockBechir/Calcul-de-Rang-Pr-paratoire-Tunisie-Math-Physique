@@ -48,3 +48,12 @@ input[type="number"] {
     width: fit-content;
     margin: 20px auto;
 }
+select {
+    border: 2px transparent ;
+    background-color: #131314;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-align: left;
+}
