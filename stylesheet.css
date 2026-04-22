@@ -59,8 +59,10 @@ select {
 }
 .tab-container {
     display: flex;
+    justify-content: center;
     gap: 5px;
-    margin-left: 20px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .box-tab {
@@ -75,4 +77,7 @@ select {
     border: 2px transparent;
     border-bottom: none; 
     background-color: #1E1F20;
+}
+.hidden-element {
+    display: none !important;
 }
