@@ -60,7 +60,7 @@ function computeRang(avg, year, tab) {
   let r = 0, floorAvg = Math.floor(avg);
   for (let i = floorAvg + 1; i < selectedRangs.length; i++) r += selectedRangs[i];
   const fractional = 1 - (avg - floorAvg);
-  return Math.round(r + fractional * (selectedRangs[floorAvg] || 0));
+  return Math.round(r + 1 + fractional * (selectedRangs[floorAvg] || 0));
 }
 
 function update() {
