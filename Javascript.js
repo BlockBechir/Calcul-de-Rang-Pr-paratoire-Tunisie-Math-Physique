@@ -192,9 +192,10 @@ function computeSubjectRang(grade, tab, year, index) {
   const selectedRangs = rangssub[tab][year][index];
   if (!selectedRangs) return 0;
   
-  const is2024MP = (year === "2024" && tab === "MP");
-  const scaledGrade = is2024MP ? grade : grade * 2;
-  let r = 0, floorGrade = Math.floor(scaledGrade);
+  const scaledGrade = (year === "2024") ? grade : grade * 2;
+  
+  let r = 0;
+  let floorGrade = Math.floor(scaledGrade);
   
   for (let i = floorGrade + 1; i < selectedRangs.length; i++) {
     r += selectedRangs[i];
