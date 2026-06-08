@@ -8,17 +8,22 @@
 <body>
   <div class="watermark">
     AHMED BECHIR TEBOURBI | IPEIB
+    <br>
+    I love you Malak ♡
   </div>
   <br>
-  <h2>NOTES:</h2>
   <form action="/submit" method="POST">
-    <div class="tab-container">
-      <div class="box-tab active" data-value="MP">MP</div>
-      <div class="box-tab" data-value="PC">PC</div>
-      <div class="box-tab" data-value="T">T</div>
-      <div class="box-tab" data-value="BG">BG</div>
+    <div class="main-box">
+      <div class="box-title">SECTIONS</div>
+      <div class="tabs-container">
+          <div class="box-tab active" data-value="MP">MP</div>
+          <div class="box-tab" data-value="PC">PC</div>
+          <div class="box-tab" data-value="T">PT</div>
+          <div class="box-tab" data-value="BG">BG</div>
+      </div>
     </div>
     <div class="main-box">
+      <div class="box-title"> NOTES</div>
       <div class="input-group">
         <label for="analyse">Math I:</label>
         <input type="number" id="analyse" name="grades" min="0" max="20" step="1" value="0">
@@ -89,6 +94,10 @@
       <div id="result2">Moyenne = 0</div>
     </div>
   </form>
+  <p class="remarque">
+    L'application a été rigoureusement testée avec les notes réelles des candidats des sessions 2024 and 2025, confirmant la précision exacte de ses calculs, veuillez prévoir une marge d'erreur maximale de 5 rangs.
+    Elle est développé par un étudiant de la promotion 2026 de l'Institut Préparatoire aux Études d'Ingénieurs de Bizerte (IPEIB).
+  </p>
   <script src="Javascript.js"></script>
 </body>
 </html>

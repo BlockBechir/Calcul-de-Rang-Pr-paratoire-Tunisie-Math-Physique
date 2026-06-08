@@ -146,3 +146,81 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: translateX(20px);
 }
+
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: rgba(56, 189, 248, 0.25);
+    background: rgba(15, 23, 42, 0.6);
+    padding: 6px 12px;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999;
+    font-family: monospace;
+}
+.remarque {
+    max-width: 500px;
+    margin: 15px auto 0 auto;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 15px;
+}
+
+.box-tab {
+    flex: 1;
+    max-width: 80px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #0f172a;
+    color: #64748b;
+    border: 1px solid #1e293b;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.15s ease;
+}
+
+.box-tab:hover {
+    color: #f8fafc;
+    background-color: #1e293b;
+}
+
+.box-tab.active {
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+    border-color: #0284c7;
+    box-shadow: 0 0 12px rgba(2, 132, 199, 0.4);
+}
+
+.box-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 8px;
+    align-self: flex-start;
+    padding-left: 2px;
+    text-align: center;
+}
