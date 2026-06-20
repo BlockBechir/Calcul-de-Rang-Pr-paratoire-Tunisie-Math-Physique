@@ -439,6 +439,10 @@ input[type="checkbox"]:checked::before {
         margin-bottom: 10px;
     }
 
+    .input-group.hidden-element {
+        display: none !important;
+    }
+
     .input-group label {
         width: auto !important;
         min-width: 0 !important;
