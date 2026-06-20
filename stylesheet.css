@@ -431,32 +431,45 @@ input[type="checkbox"]:checked::before {
     }
 
     .input-group {
-        width: 100% !important;
         display: grid !important;
-        grid-template-columns: 1fr 80px 60px;
+        grid-template-columns: minmax(0, 1fr) 75px 55px !important;
+        width: 100% !important;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         margin-bottom: 10px;
     }
 
     .input-group label {
         width: auto !important;
+        min-width: 0 !important;
         text-align: left !important;
         margin-right: 0 !important;
         font-size: 0.85rem;
-        color: #94a3b8;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .input-group input[type="number"],
     .input-group select {
-        width: 100% !important;
-        padding: 6px !important;
+        width: 75px !important;
+        padding: 6px 4px !important;
         font-size: 14px;
         box-sizing: border-box;
+        text-align: center;
     }
 
     .input-group input[type="checkbox"] {
         width: 40px !important;
+        justify-self: start;
+    }
+
+    /* rank number on the right */
+    .input-group label:last-child {
+        text-align: right !important;
+        font-size: 0.85rem;
+        width: auto !important;
+        margin-right: 0 !important;
     }
 
     .tabs-container {
