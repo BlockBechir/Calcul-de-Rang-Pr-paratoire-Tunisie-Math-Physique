@@ -122,9 +122,7 @@ select:focus {
     box-shadow: 0 0 12px rgba(2, 132, 199, 0.4);
 }
 
-.hidden-element {
-    display: none !important;
-}
+
 
 .input-group label:has(+ input + label) + input + label {
     color: #f59e0b;
@@ -439,9 +437,7 @@ input[type="checkbox"]:checked::before {
         margin-bottom: 10px;
     }
 
-    .input-group.hidden-element {
-        display: none !important;
-    }
+
 
     .input-group label {
         width: auto !important;
@@ -546,4 +542,7 @@ input[type="checkbox"]:checked::before {
         width: 100%;
         box-sizing: border-box;
     }
+}
+.hidden-element {
+    display: none !important;
 }
