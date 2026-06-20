@@ -479,20 +479,36 @@ input[type="checkbox"]:checked::before {
     }
 
     .rank-table {
-        width: 700px;
-        min-width: 700px;
-        table-layout: fixed;
+        width: max-content;
+        min-width: 100%;
+        table-layout: auto;
     }
 
     .rank-table th,
     .rank-table td {
-        padding: 10px 12px;
+        padding: 10px 14px;
         font-size: 13px;
+        white-space: normal;
     }
 
-    .rank-table th:nth-child(1) { width: 280px; }
-    .rank-table th:nth-child(2) { width: 280px; }
-    .rank-table th:nth-child(3) { width: 140px; }
+    .rank-table th:nth-child(1),
+    .rank-table td[rowspan] {
+        min-width: 180px;
+        max-width: 220px;
+    }
+
+    .rank-table th:nth-child(2),
+    .rank-table tbody td:not([rowspan]):not(:last-child) {
+        min-width: 160px;
+        max-width: 200px;
+    }
+
+    .rank-table th:nth-child(3),
+    .rank-table td:last-child {
+        min-width: 70px;
+        white-space: nowrap;
+        text-align: center;
+    }
 
     .contact-notice,
     .remarque {
