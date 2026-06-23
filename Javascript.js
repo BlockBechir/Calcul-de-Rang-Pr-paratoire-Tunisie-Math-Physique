@@ -3,7 +3,7 @@ const yearSelect = document.getElementById("year");
 const resultDiv = document.getElementById("result");
 const resultDiv2 = document.getElementById("result2");
 const resultDiv3 = document.getElementById("Admise");
-const tabs = document.querySelectorAll(".box-tab");
+const tabs = document.querySelectorAll("#calculator .box-tab[data-value]");
 const bonusCheck = document.getElementById("bonus");
 
 bonusCheck.addEventListener("change", update);
